@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "3299c623-e0eb-44bb-a209-97ccaa9709fd",
+		"name": "corpex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42475632"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jose\",\r\n  \"surname\": \"Mendez\",\r\n  \"username\": \"jmendez\",\r\n  \"email\": \"jmendez@gmail.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\": \"ADMIN_ROLE\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/ProyectoFSystem/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ProyectoFSystem",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"jmendez@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/ProyectoFSystem/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ProyectoFSystem",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MmQyNTY4OWEwMjQ1NTc4OTIzNDYiLCJpYXQiOjE3NDEwOTg3MTAsImV4cCI6MTc0MTEwMjMxMH0.NMMGe0DeU_CqydLMQ74CgaD3S-GSvAer4dYlN_pLM6E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tech Innovations Inc.\",\r\n    \"yearsOfExperience\": 10,\r\n    \"impactLevel\": \"High\",\r\n    \"category\": \"67c6444c5203f7c8b8ff618d\",  \r\n    \"representative\": \"67c644105203f7c8b8ff6189\" \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/ProyectoFSystem/v1/company",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ProyectoFSystem",
+						"v1",
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register-category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2MmQyNTY4OWEwMjQ1NTc4OTIzNDYiLCJpYXQiOjE3NDEwNDQ2MTksImV4cCI6MTc0MTA0ODIxOX0.MkYN9rIrGxuUNOkFpEuMSPpWs5qIDSWeaM5xIi5LIG0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Tecnología\",\r\n  \"description\": \"Categoría relacionada con productos tecnológicos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/ProyectoFSystem/v1/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ProyectoFSystem",
+						"v1",
+						"category"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

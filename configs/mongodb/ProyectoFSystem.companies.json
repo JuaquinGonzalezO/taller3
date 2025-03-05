@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "67c71767d03931954762b64b"
+  },
+  "name": "Tech Innovations Inc.",
+  "yearsOfExperience": 10,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c6444c5203f7c8b8ff618d"
+  },
+  "representative": {
+    "$oid": "67c644105203f7c8b8ff6189"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-03-04T15:08:23.792Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T15:08:23.792Z"
+  }
+}]

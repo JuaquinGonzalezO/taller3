@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "67c6408922a1e6a3ffbb482c"
+  },
+  "name": "Tecnología",
+  "description": "Categoría relacionada con productos tecnológicos",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c6444c5203f7c8b8ff618d"
+  },
+  "name": "Wendy's",
+  "description": "Preparacion de comida rapida",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c644795203f7c8b8ff6190"
+  },
+  "name": "Wendys",
+  "description": " comida rapida",
+  "status": true
+}]
